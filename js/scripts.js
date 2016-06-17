@@ -1,14 +1,11 @@
 // BACKEND
 function Pizza() {
-  this.size;
+  this.diameter;
   this.toppings;
+  this.total;
 }
 
-Pizza.prototype.choosePrice = function() {
-
-}
-
-Pizza.prototype.addTopping = function() {
+Pizza.prototype.addToppings = function() {
   var priceToppings = 0;
   $('input:checkbox:checked').each(function() {
     priceToppings += parseInt($(this).val());
@@ -16,17 +13,20 @@ Pizza.prototype.addTopping = function() {
   return this.toppings = priceToppings
 }
 
+Pizza.prototype.sumTotal = function() {
+  var sum = this.diameter + this.toppings
+  this.total = "$" + sum + ".00"
+}
 
 // FRONTEND
 $(function(){
   $("form#mainForm").submit(function(event){
     event.preventDefault();
 
-    var priceSize = $("select#size").
-
     var userPizza = new Pizza();
-    userPizza.chooseSize();
-    userPizza.addTopping();
+    userPizza.diameter = parseInt($("select#size").val());
+    userPizza.addToppings();
+    userPizza.sumTotal();
 
     console.log(userPizza)
 
