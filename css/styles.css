@@ -1,0 +1,80 @@
+/*HEADER*/
+#header, #receipt {
+  width: 80%;
+  margin: 2% auto 2%;
+  text-align: center;
+  border: 1px solid black;
+  background-image: url(../img/pizza-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-shadow: -2px 2px 1px white;
+}
+
+/*MAIN*/
+#mainCol {
+  width: 55%;
+  float: left;
+  /*background-color: lightgreen;*/
+  padding: 2% 5% 2% 10%;
+}
+
+h3 {
+  color: #ffcc00;
+  text-shadow: -1px 1px 1px black;
+}
+
+sup {
+  color: red;
+  font-size: 12px;
+}
+
+button#order {
+  margin: 5% 0;
+  font-size: 16px;
+  box-shadow: -2px 2px 10px grey;
+}
+
+
+/*SIDEBAR*/
+#sidebarCol {
+  width: 15%;
+  display: inline-block;
+  /*background-color: lightblue;*/
+  padding: 2% 10% 2% 5%;
+
+}
+ul {
+  list-style-type: none;
+  text-indent: none;
+  padding: 0;
+}
+
+#required {
+  font-size: 12px;
+  text-align: right;
+}
+
+/*RECEIPT*/
+#receipt {
+  background-position: 0 70%;
+}
+
+#receiptShell {
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*display: none;*/
+  box-shadow: rgba(0,0,0,0.2) 0px 2px 3px, inset rgba(0,0,0,0.2) 0px -1px 2px;
+  border-radius: 10px;
+}
+
+h2 {
+  padding: 1em 0 0;
+}
+
+#receiptText {
+  padding: 0 0 1em;
+}
