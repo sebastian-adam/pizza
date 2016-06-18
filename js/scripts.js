@@ -39,10 +39,11 @@ Pizza.prototype.submitReceipt2 = function() {
 }
 
 function joinAnd(array) {
-  lastItem = array.pop();
   if (!array.length) {
     return "";
-  } else if (array.length === 0) {
+  }
+  lastItem = array.pop();
+  if (array.length === 0) {
     return lastItem;
   } else if (array.length > 0) {
     return array.join(", ") + " and " + lastItem;
