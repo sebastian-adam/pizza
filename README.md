@@ -18,4 +18,8 @@ This website allows a user to gather the cost of a fake pizza depending on size 
 * The program should combine dollar values for all chosen elements and display to user.
 * The program should gather descriptive values for all chosen elements and display to user.
 
+## Link to site
+
+sprokuski.github.io/pizza
+
 Copyright &copy; 2016
