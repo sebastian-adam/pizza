@@ -16,10 +16,10 @@
         <h3>Choose your size<sup>*</sup></h3>
         <select id="size">
           <option value="" disabled selected>Select</option>
-          <option value="15">10"</option>
-          <option value="18">12"</option>
-          <option value="21">14"</option>
-          <option value="24">16"</option>
+          <option name="10" value="15">10"</option>
+          <option name="12" value="18">12"</option>
+          <option name="14" value="21">14"</option>
+          <option name="16" value="24">16"</option>
         </select>
         <h3>Choose you toppings</h3>
         <input type="checkbox" class="pizzaTopping" value="2" name="Pepperoni">Pepperoni<br>
@@ -49,7 +49,7 @@
     <div id="receipt">
       <div id="receiptShell">
         <h2>You're order is in the oven.</h2>
-        <p id="receiptText"><p>
+        <p id="receiptTextLine"><span id="receiptTextLine1"></span><br><strong id="receiptTextLine2"></strong>. Please have money ready.</p>
       </div>
   </body>
 </html>

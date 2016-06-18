@@ -13,6 +13,7 @@ h1 {
   text-shadow: -2px 2px 1px white;
 }
 
+
 /*MAIN*/
 #mainCol {
   width: 55%;
@@ -57,6 +58,7 @@ ul {
   text-align: right;
 }
 
+
 /*RECEIPT*/
 #receipt {
   background-position: 0 70%;
@@ -66,15 +68,17 @@ ul {
   margin: 0 auto;
   width: 80%;
   background-color: rgba(255, 255, 255, 0.8);
-  /*display: none;*/
+  display: none;
   box-shadow: rgba(0,0,0,0.2) 0px 2px 3px, inset rgba(0,0,0,0.2) 0px -1px 2px;
   border-radius: 10px;
 }
 
 h2 {
   padding: 1em 0 0;
+  font-style: italic;
 }
 
-#receiptText {
+#receiptTextLine {
   padding: 0 0 1em;
+  line-height: 2em;
 }
