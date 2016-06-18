@@ -16,7 +16,7 @@ h1 {
 
 /*MAIN*/
 #mainCol {
-  width: 55%;
+  width: 25%;
   float: left;
   /*background-color: lightgreen;*/
   padding: 2% 5% 2% 10%;
@@ -39,14 +39,24 @@ button#order {
 }
 
 
+/*GRAPHIC*/
+#graphicCol {
+  /*background-color: lightblue;*/
+  text-align: center;
+  width: 20%;
+  float: left;
+  padding: 2% 5%;
+}
+
+
 /*SIDEBAR*/
 #sidebarCol {
   width: 15%;
   display: inline-block;
-  /*background-color: lightblue;*/
+  /*background-color: yellow;*/
   padding: 2% 10% 2% 5%;
-
 }
+
 ul {
   list-style-type: none;
   text-indent: none;

@@ -10,10 +10,6 @@ function Pizza() {
 Pizza.prototype.chooseSize = function() {
   this.diameter = $("#size option:selected").text();
   this.$diameter = parseInt($("select#size").val());
-  if (!this.$diameter) {
-    alert("Please select size.");
-    return;
-  }
   return this.$diameter, this.diameter;
 }
 
@@ -44,13 +40,14 @@ Pizza.prototype.submitReceipt2 = function() {
 
 function joinAnd(array) {
   lastItem = array.pop();
-  if (array.length === 0) {
+  if (!array.length) {
+    return "";
+  } else if (array.length === 0) {
     return lastItem;
   } else if (array.length > 0) {
     return array.join(", ") + " and " + lastItem;
   }
 }
-
 
 // FRONTEND
 $(function(){
