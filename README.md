@@ -2,7 +2,7 @@
 
 ## By Sebastian Prokuski made on June 17, 2016
 
-This website allows a user to gather the cost of a fake pizza depending on size and toppings chosen. It requires input field validation and uses object constructors and prototypes to sum costs and display object values.
+This website allows a user to gather the cost of a fake pizza depending on size and toppings chosen.
 
 ### Technologies Used
 
@@ -12,11 +12,23 @@ This website allows a user to gather the cost of a fake pizza depending on size 
 
 ## Specifications
 
-* The program should correlate disparate pizza sizes to unique prices.
-* The program should correlate disparate pizza toppings to unique prices.
-* The program should require a selection of pizza size and disregard an empty value for toppings.
-* The program should combine dollar values for all chosen elements and display to user.
-* The program should gather descriptive values for all chosen elements and display to user.
+* The program should associate pizza sizes with unique prices.
+  * Ex. Input: "small"
+  * Ex. Output: 12
+* The program should associate pizza toppings with unique prices and sum them.
+  * Ex. Input: "pepperoni"
+  * Ex. Output: 2
+  * Ex. Input: "pepperoni, pineapple"
+  * Ex. Output: 3
+* The program should collect a list of ordered toppings.
+  * Ex. Input: "pepperoni, pineapple"
+  * Ex. Output: [pepperoni, pineapple]
+* The program should combine values for all chosen elements into two decimal integer.
+  * Ex. Input: "small, pepperoni, pineapple"
+  * Ex. Output: 17.00
+* The program should gather descriptive values for all chosen elements into grammatical string
+  * Ex. Input: "small, pepperoni, pineapple"
+  * Ex. Output: "one small pepperoni and pineapple pizza"
 
 ## Link to site
 
